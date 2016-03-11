@@ -3,4 +3,5 @@
 	<jmxConfigurator/>
 	<logger name="org.apache.zookeeper" level="DEBUG"/>
 	<logger name="org.apache.kafka" level="DEBUG"/>
+	<logger name="org.I0Itec.zkclient" level="DEBUG"/>
 </configuration>
