@@ -1,7 +1,7 @@
 <configuration>
 	<include resource="org/springframework/boot/logging/logback/base.xml"/>
 	<jmxConfigurator/>
-	<logger name="org.apache.zookeeper" level="DEBUG"/>
-	<logger name="org.apache.kafka" level="DEBUG"/>
-	<logger name="org.I0Itec.zkclient" level="DEBUG"/>
+	<logger name="org.apache.zookeeper" level="TRACE"/>
+	<logger name="org.apache.kafka" level="TRACE"/>
+	<logger name="org.I0Itec.zkclient" level="TRACE"/>
 </configuration>
