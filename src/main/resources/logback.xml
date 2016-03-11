@@ -1,4 +1,6 @@
 <configuration>
 	<include resource="org/springframework/boot/logging/logback/base.xml"/>
 	<jmxConfigurator/>
+	<logger name="org.apache.zookeeper" level="DEBUG"/>
+	<logger name="org.apache.kafka" level="DEBUG"/>
 </configuration>
