@@ -19,9 +19,38 @@ public class EdmpSampleStreamSinkApplication {
 	}
 
 	@ServiceActivator(inputChannel=Sink.INPUT)
-	public void loggerSink(Object payload) {
-		logger.info("Received: " + payload);
+	public void loggerSink(SinkTimeInfo sinkTimeInfo) {
+		logger.info("Received: " + sinkTimeInfo.toString());
 	}
+	
+	public static class SinkTimeInfo{
+		
+		private String time;
+		private String label;
+		
+		public String getTime() {
+			return time;
+		}
+
+		public void setTime(String time) {
+			this.time = time;
+		}
+
+		public void setSinkLabel(String label) {
+			this.label = label;
+		}
+
+		public String getLabel() {
+			return label;
+		}
+
+		@Override
+		public String toString() {
+			return "SinkTimeInfo [time=" + time + ", label=" + label + "]";
+		}
+		
+	}
+
 
 }
 
